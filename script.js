@@ -1,9 +1,9 @@
-function reply(yes) {
+function reply(answer) {
     const result = document.getElementById("result");
 
-    if (yes) {
-        result.textContent = "Ok thanks 😎🙏";
+    if (answer) {
+        result.textContent = "> ACCESS GRANTED ✓  |  Ok thanks 😎🙏";
     } else {
-        result.textContent = "Ok 💀";
+        result.textContent = "> ACCESS DENIED ✕  |  Ok 💀";
     }
 }
