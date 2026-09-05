@@ -1,53 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>HISTORY.exe</title>
-<style>
-body {
-  background: #000;
-  color: #00ff00;
-  font-family: monospace;
-  text-align: center;
-  padding: 50px;
-}
-
-button, input {
-  background: #000;
-  color: #00ff00;
-  border: 1px solid #00ff00;
-  padding: 10px;
-  margin: 5px;
-  font-family: monospace;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HISTORY.exe</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
 
-<h2>⚡ HISTORY.exe ⚡</h2>
+    <div class="scanlines"></div>
 
-<input id="name" placeholder="Friend's name">
+    <main class="terminal">
+        <div class="top">
+            <span>●</span>
+            <span>●</span>
+            <span>●</span>
+            <b> HISTORY.exe</b>
+        </div>
 
-<p>Do you have the Vedic Civilization work?</p>
+        <div class="content">
+            <p class="green">root@history:~$ system_check</p>
+            <p>Loading Vedic Civilization database<span class="dots">...</span></p>
 
-<button onclick="reply(true)">YES</button>
-<button onclick="reply(false)">NO</button>
+            <div class="question">
+                <p>> Do you have the <strong>Vedic Civilization</strong> work?</p>
 
-<h3 id="result"></h3>
+                <button onclick="reply(true)">[ YES ]</button>
+                <button onclick="reply(false)">[ NO ]</button>
+            </div>
 
-<script>
-function reply(yes) {
-    let name = document.getElementById("name").value || "Bro";
+            <p id="result"></p>
+        </div>
+    </main>
 
-    if (yes) {
-        document.getElementById("result").innerText =
-        "Ok thanks, " + name + " 😎🙏";
-    } else {
-        document.getElementById("result").innerText =
-        "Ok " + name + " 💀";
-    }
-}
-</script>
-
+    <script src="./script.js"></script>
 </body>
 </html>
