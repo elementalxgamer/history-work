@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HISTORY.exe</title>
+<style>
+body {
+  background: #000;
+  color: #00ff00;
+  font-family: monospace;
+  text-align: center;
+  padding: 50px;
+}
+
+button, input {
+  background: #000;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  padding: 10px;
+  margin: 5px;
+  font-family: monospace;
+}
+</style>
+</head>
+
+<body>
+
+<h2>⚡ HISTORY.exe ⚡</h2>
+
+<input id="name" placeholder="Friend's name">
+
+<p>Do you have the Vedic Civilization work?</p>
+
+<button onclick="reply(true)">YES</button>
+<button onclick="reply(false)">NO</button>
+
+<h3 id="result"></h3>
+
+<script>
+function reply(yes) {
+    let name = document.getElementById("name").value || "Bro";
+
+    if (yes) {
+        document.getElementById("result").innerText =
+        "Ok thanks, " + name + " 😎🙏";
+    } else {
+        document.getElementById("result").innerText =
+        "Ok " + name + " 💀";
+    }
+}
+</script>
+
+</body>
+</html>
